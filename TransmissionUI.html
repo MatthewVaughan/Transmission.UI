@@ -2,10 +2,36 @@
 <html lang="en">
   <head>
   <style type="text/css">
+  
+  h1 {
+	text-align: center;
+  }
   #title {
-		position: ;
+	font-family: "Lucida Console", Monaco, monospace;
+  }
+  #subDash {
+	font-size: 30px;
+	border: 25px ridge rgb(160,160,160);
+	background-color: rgb(204,255,255);
+	border-radius:40px;
+  }
+  #arrow {
+	left: 8%;
+	font-size: 30px;
+	padding: 10px;
+  }
+  #rpm {
+  top: 25px;
+  text-align: right;
+  font-size: 25px;
+  }
+  #mph {
+  top: 25px;
+  text-align: left;
+  font-size: 25px;
   }
   </style>
+  <script src="myscripts.js"></script>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -23,37 +49,37 @@
     <![endif]-->
   </head>
   <body>
-    <h1 id="title" class="col-xs-12">Transmission 101</h1>
-	<div class="container">
-		<div class="row">
-			<div class="col-xs-1"></div>
-			<div class="col-xs-1">1</div>
-			<div class="col-xs-1">2</div>
-			<div class="col-xs-1">3</div>
-			<div class="col-xs-1">4</div>
-			<div class="col-xs-1">5</div>
-			<div class="col-xs-1">6</div>
-			<div class="col-xs-1">7</div>
-			<div class="col-xs-1">8</div>
-			<div class="col-xs-1">9</div>
-			<div class="col-xs-1">0</div>
-			<div class="col-xs-1"></div>
+  <div class="container">
+	<div class ="row">
+		<div class="col-xs-0 col-sm-3 col-lg-4"></div>
+		<h1 id="title" class="col-xs-12 col-sm-6 col-lg-4">Transmission</h1>
+		<div class="col-xs-0 col-sm-3 col-lg-4"></div>
+	</div>
+  </div>
+		<div id="subDash" class="container-fluid">
+			<div class="row">
+				<div id="rpm" class="col-xs-1">Xrpm</div>
+				<div class="col-xs-1">1</div>
+				<div class="col-xs-1">2</div>
+				<div class="col-xs-1">3</div>
+				<div class="col-xs-1">4</div>
+				<div class="col-xs-1">5</div>
+				<div class="col-xs-1">6</div>
+				<div class="col-xs-1">7</div>
+				<div class="col-xs-1">8</div>
+				<div class="col-xs-1">9</div>
+				<div class="col-xs-1">0</div>
+				<div id="mph" class="col-xs-1">Xmph</div>
+			</div>
+			<div class="row">
+				<div id="arrow" class="col-xs-12 glyphicon glyphicon-arrow-up"></div>
+			</div>
 		</div>
 	</div>
-	<div class="container">
-		<div class="row">
-			<div class="col-xs-12"> Arrow </div>
-		</div>
-	</div>
-	<div class="container">
-		<div class="row">
-			<div class="col-xs-3"></div>
-			<div class="col-xs-3">Xrpm</div>
-			<div class="col-xs-3">Ymph</div>
-			<div class="col-xs-3"></div>
-		</div>
-	</div>
-
+			<button onclick="arrowPointer()">arrow</button>
+			<button onclick="setRPM(12)">rpm</button>
+			<button onclick="setMPH(15)">mph</button>
+			
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->

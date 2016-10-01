@@ -1,3 +1,13 @@
+function setRPM(val) {
+	var rpmClass = document.getElementById("rpm");
+	rpmClass.innerHTML = val + "rpm";
+}
+
+function setMPH(val) {
+	var mphClass = document.getElementById("mph");
+	mphClass.innerHTML = val + "mph";
+}
+
 function arrowPointer() {
 
 	var arr = [1,9,2,8,3,7,4,6,5,0];
