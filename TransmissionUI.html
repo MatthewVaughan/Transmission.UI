@@ -30,6 +30,7 @@
   text-align: left;
   font-size: 25px;
   }
+  
   </style>
   <script src="myscripts.js"></script>
     <meta charset="utf-8">
@@ -59,26 +60,23 @@
 		<div id="subDash" class="container-fluid">
 			<div class="row">
 				<div id="rpm" class="col-xs-1">Xrpm</div>
-				<div class="col-xs-1">1</div>
-				<div class="col-xs-1">2</div>
-				<div class="col-xs-1">3</div>
-				<div class="col-xs-1">4</div>
-				<div class="col-xs-1">5</div>
-				<div class="col-xs-1">6</div>
-				<div class="col-xs-1">7</div>
-				<div class="col-xs-1">8</div>
-				<div class="col-xs-1">9</div>
-				<div class="col-xs-1">0</div>
+				<div id="1" class="col-xs-1">1</div>
+				<div id="2" class="col-xs-1">2</div>
+				<div id="3" class="col-xs-1">3</div>
+				<div id="4" class="col-xs-1">4</div>
+				<div id="5" class="col-xs-1">5</div>
+				<div id="6" class="col-xs-1">6</div>
+				<div id="7" class="col-xs-1">7</div>
+				<div id="8" class="col-xs-1">8</div>
+				<div id="9" class="col-xs-1">9</div>
+				<div id="0" class="col-xs-1">0</div>
 				<div id="mph" class="col-xs-1">Xmph</div>
 			</div>
 			<div class="row">
 				<div id="arrow" class="col-xs-12 glyphicon glyphicon-arrow-up"></div>
 			</div>
 		</div>
-	</div>
-			<button onclick="arrowPointer()">arrow</button>
-			<button onclick="setRPM(12)">rpm</button>
-			<button onclick="setMPH(15)">mph</button>
+			<button onclick=setParam("mph",70)>Calibrate</button>
 			
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>

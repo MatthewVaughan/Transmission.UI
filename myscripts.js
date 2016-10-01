@@ -1,11 +1,27 @@
-function setRPM(val) {
-	var rpmClass = document.getElementById("rpm");
-	rpmClass.innerHTML = val + "rpm";
+function setParam(id,val) {
+	var param = document.getElementById(id);
+	param.innerHTML = Math.round(val) + id.toString();
 }
 
-function setMPH(val) {
-	var mphClass = document.getElementById("mph");
-	mphClass.innerHTML = val + "mph";
+function move(id,pos){
+	var tag = document.getElementById(id);
+	tag.style.left = pos + "%";
+}
+
+window.onload = function(){
+	setParam("mph",50);
+	setParam("rpm",50);
+	move("arrow",50);
+	move("1", 10);
+	move("2", 10);
+	move("3", 10);
+	move("4", 10);
+	move("5", 10);
+	move("6", 10);
+	move("7", 10);
+	move("8", 10);
+	move("9", 10);
+	move("0", 10);
 }
 
 function arrowPointer() {
