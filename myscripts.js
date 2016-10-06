@@ -1,7 +1,3 @@
-
-
-
-
 var period = 100; // milliseconds
 var interval = null;
 function start(){
